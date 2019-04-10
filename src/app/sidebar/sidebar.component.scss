@@ -1,0 +1,15 @@
+.sidebar {
+    width: 70px;
+    height: calc(100vh - 70px);
+    background: #e6e6e6;
+    box-shadow: 1px 0 6px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 0;
+    top: 70px;
+    transition: 500ms;
+    cursor: pointer;
+    
+    &:hover {
+        width: 250px;
+    }
+}
