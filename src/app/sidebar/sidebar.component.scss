@@ -1,15 +1,57 @@
 .sidebar {
     width: 70px;
     height: calc(100vh - 70px);
-    background: #e6e6e6;
+    background: #151929;
     box-shadow: 1px 0 6px rgba(0, 0, 0, 0.3);
     position: absolute;
     left: 0;
     top: 70px;
     transition: 500ms;
-    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-top: 30px;
+
+    .list {
+        width: 100%;
+
+        .center-helper {
+            display: flex;
+            align-items: center;
+            height: 100px;
+
+        }
+
+        .item {
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+            border-bottom: 1px solid rgba(#c6c6c6, 0.4);
+
+            img {
+                width: 40px;
+            }
+
+            span {
+                display: none;
+                margin-left: 25px;
+            }
+        }
+    }
     
     &:hover {
         width: 250px;
+
+        .list .item span {
+            display: inline;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        left: -255px;
+        width: 250px;
+        &.open {
+            left: 0;
+        }
     }
 }

@@ -7,12 +7,20 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { ShireComponent } from './shire/shire.component';
+import { GondorComponent } from './gondor/gondor.component';
+import { MordorComponent } from './mordor/mordor.component';
+import { OfflineComponent } from './offline/offline.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SidebarComponent
+    SidebarComponent,
+    ShireComponent,
+    GondorComponent,
+    MordorComponent,
+    OfflineComponent
   ],
   imports: [
     BrowserModule,

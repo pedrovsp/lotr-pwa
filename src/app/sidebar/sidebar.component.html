@@ -1,3 +1,26 @@
-<div class="sidebar">
+<div class="sidebar" [ngClass]="{'open': menuService.isMenuOpen()}">
+  <div class="list">
+    <div class="item">
+      <div class="center-helper">
+        <img src="/assets/images/hobbiton.png">
+        <span>The Shire</span>
 
+      </div>
+    </div>
+    <div class="item">
+      <div class="center-helper">
+        <img src="/assets/images/gondor.png">
+        <span>Gondor</span>
+
+      </div>
+    </div>
+    <div class="item">
+      <div class="center-helper">
+        <img src="/assets/images/mordor.png">
+        <span>Mordor</span>
+
+      </div>
+    </div>
+
+  </div>
 </div>
