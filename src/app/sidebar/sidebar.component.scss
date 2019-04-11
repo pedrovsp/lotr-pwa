@@ -3,7 +3,7 @@
     height: calc(100vh - 70px);
     background: #151929;
     box-shadow: 1px 0 6px rgba(0, 0, 0, 0.3);
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 70px;
     transition: 500ms;
@@ -11,6 +11,7 @@
     justify-content: center;
     color: white;
     padding-top: 30px;
+    z-index: 1;
 
     .list {
         width: 100%;
