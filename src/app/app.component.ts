@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  title = 'pwa-lotr';
+  title = 'LotR';
   offlinePage = false;
 
   ngOnInit() {
+    this.handleConnection();
+  }
+
+  handleConnection() {
     if (!navigator.onLine) {
       this.offlinePage = true;
     }

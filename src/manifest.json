@@ -1,6 +1,6 @@
 {
-  "name": "pwa-lotr",
-  "short_name": "pwa-lotr",
+  "name": "Lord of the Rings: A PWA story",
+  "short_name": "LotR",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
