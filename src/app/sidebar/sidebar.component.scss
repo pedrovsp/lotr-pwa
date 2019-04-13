@@ -57,6 +57,9 @@
         left: -255px;
         width: 250px;
         &.open {
+            .list .item span {
+                opacity: 1;
+            }
             left: 0;
         }
     }
