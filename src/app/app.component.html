@@ -1,5 +1,6 @@
 <app-header></app-header>
 <app-sidebar></app-sidebar>
 <div class="content">
-  <router-outlet></router-outlet>
+  <router-outlet *ngIf="!offlinePage"></router-outlet>
+  <app-offline *ngIf="offlinePage"></app-offline>
 </div>
