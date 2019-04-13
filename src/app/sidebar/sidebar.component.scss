@@ -10,7 +10,6 @@
     display: flex;
     justify-content: center;
     color: white;
-    padding-top: 30px;
     z-index: 1;
 
     .list {
@@ -20,22 +19,26 @@
             display: flex;
             align-items: center;
             height: 100px;
-
+            outline: none;
+            position: relative;
+            left: 22%;
         }
 
         .item {
             display: flex;
-            justify-content: center;
             cursor: pointer;
-            border-bottom: 1px solid rgba(#c6c6c6, 0.4);
-
+            border-bottom: 1px solid rgba(#fff, 0.1);
+            outline: none;
+            
             img {
                 width: 40px;
             }
 
             span {
-                display: none;
+                opacity: 0;
                 margin-left: 25px;
+                transition-delay: 400ms;
+                transition-duration: 300ms;
             }
         }
     }
@@ -45,7 +48,7 @@
 
         @media only screen and (min-width: 768px) {
             .list .item span {
-                display: inline;
+                opacity: 1;
             }
         }
     }
