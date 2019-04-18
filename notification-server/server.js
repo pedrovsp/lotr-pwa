@@ -1,7 +1,7 @@
-import express from 'express';
-import {Application} from 'express';
-import {notify} from './notify.route';
-import {subscribe} from './subscribe.route';
+const express = require('express');
+const Application = require('express/lib/application');
+const notify = require('./notify.route');
+const subscribe = require('./subscribe.route');
 const bodyParser = require('body-parser');
 
 const webpush = require('web-push');
@@ -17,7 +17,7 @@ webpush.setVapidDetails(
     vapidKeys.privateKey
 );
 
-const app: Application = express();
+const app = express();
 
 app.use(bodyParser.json());
 

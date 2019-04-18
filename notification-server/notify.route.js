@@ -1,9 +1,9 @@
-import {SUBSCRIPTIONS} from './db';
+var SUBSCRIPTIONS = require('./db');
 
 const webpush = require('web-push');
 
 
-export function notify(req, res) {
+function notify(req, res) {
 
     console.log('Total subscriptions', SUBSCRIPTIONS.length);
 
@@ -34,3 +34,5 @@ export function notify(req, res) {
             res.sendStatus(500);
         });
 }
+
+module.exports = notify;

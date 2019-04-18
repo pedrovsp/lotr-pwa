@@ -1,6 +1,6 @@
-import {SUBSCRIPTIONS} from './db';
+var SUBSCRIPTIONS = require('./db');
 
-export function subscribe(req, res) {
+function subscribe(req, res) {
 
     const sub = req.body;
 
@@ -10,3 +10,5 @@ export function subscribe(req, res) {
 
     res.status(200).json({message: 'Subscription added successfully.'});
 }
+
+module.exports = subscribe
