@@ -11,6 +11,7 @@ import { ShireComponent } from './shire/shire.component';
 import { GondorComponent } from './gondor/gondor.component';
 import { MordorComponent } from './mordor/mordor.component';
 import { OfflineComponent } from './offline/offline.component';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { OfflineComponent } from './offline/offline.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
